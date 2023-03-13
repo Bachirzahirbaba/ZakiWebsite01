@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire de contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body {
+			background-color: #f1a4a4;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+			padding: 0;
+			margin: 0;
+		}
+
+		form {
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		h1 {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		input[type="email"],
+		input[type="text"],
+		textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f3efef;
+			margin-bottom: 20px;
+		}
+
+		textarea {
+			height: 200px;
+		}
+
+		button {
+			display: block;
+			padding: 10px 20px;
+			background-color: #0066cc;
+			color: #fff;
+			text-decoration: none;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form method="post" action="traitement-du-formulaire.php">
+		<h1>Contactez-nous</h1>
+		<label for="email">Adresse email :</label>
+		<input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+		<label for="sujet">Sujet :</label>
+		<input type="text" id="sujet" name="sujet" placeholder="Le sujet de votre message" required>
+		<label for="message">Message :</label>
+		<textarea id="message" name="message" placeholder="Votre message" required></textarea>
+		<button type="submit">Envoyer</button>
+	</form>
+</body>
+</html>
